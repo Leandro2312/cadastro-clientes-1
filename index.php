@@ -43,9 +43,8 @@
 
     //if usando operador ternario
     $hora = 20;
-    echo
-
-
+    echo ($hora>=10) ? "certo" : "errado";
+    echo "<br>";
     $dia = 2;
     switch ($dia) {
         case 1:
@@ -73,7 +72,7 @@
             echo "Dia inválido";
             break;
     }
-    
+    echo "<br>";
     //---------------------------------------------------
     // Estrutura de repetiçaõ
     
@@ -85,6 +84,19 @@
        echo "contador while, loop número $contador <br>";
         $contador++;
     }
+
+    echo "<br>";
+
+
+    //array
+
+    $clientes = ["guto","cleiton","joao","milena","giovani","guilherme","Ana"];
+    $contador=0;
+    while($contador <= 6){
+        echo "$clientes[$contador]<br>";
+        $contador++;
+    }
+
 
     ?>
 </body>
